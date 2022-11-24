@@ -6,7 +6,8 @@ class Editar extends React.Component {
     }
     
     render() { 
-        return (  <div className="card">
+        return ( 
+             <div className="card">
             <div className="card-header">
                Editar Informacion
             </div>
