@@ -18,12 +18,7 @@ class Agregar extends React.Component {
                 <button type="button" className="btn btn-dark"><img src="./Iconos/Megatone.ico" height ="20" width="20" />Megatone</button>
                 <button type="button" className="btn btn-secondary"><img src="./Iconos/logo.ico" height ="20" width="20" />Conmega</button>
 
-                <select className="form-select col-2 form-select-sm" aria-label="Default select example">
-                            <option selected>Tecnico Encargado</option>
-                            <option value="1">jalopez</option>
-                            <option value="2">mbauza</option>
-                            <option value="3">arindeic</option>
-                    </select>
+               
             </div>
             <div className="card-footer text-muted">
                 Footer
