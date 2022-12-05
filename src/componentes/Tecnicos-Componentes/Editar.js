@@ -7,16 +7,9 @@ class Editar extends React.Component {
     
     render() { 
         return (  <div className="card">
-            <div className="card-header">
-               Editar Informacion
-            </div>
-            <div className="card-body">
-                <h4 className="card-title">Title</h4>
-                <p className="card-text">Text</p>
-            </div>
-            <div className="card-footer text-muted">
-                Footer
-            </div>
+            
+           
+            
         </div>);
     }
 }

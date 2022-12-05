@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
-  background: linear-gradient(#f1f6f7, #c2e5eb);
 }
  
 
@@ -16,7 +14,4 @@ code {
 }
 div .card{ 
   background: rgb(240, 245, 245);
-}
-div .card-footer{ 
-  background: rgb(12, 235, 235);
 }

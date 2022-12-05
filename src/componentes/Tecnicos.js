@@ -13,16 +13,20 @@ class Tecnicos extends React.Component {
         return (   
             <>
              <Router> 
-                <nav className="navbar navbar-expand navbar-dark bg-primary">
-                <div className="nav navbar-nav">
-                    <Link className="nav-item nav-link" to="/agregar">Agregar</Link>
-                    <Link className="nav-item nav-link" to="/editar">Editar</Link>
-                    <Link className="nav-item nav-link" to={"/borrar"}>Borrar</Link>
-                </div>
-            </nav>
-              <Listar></Listar>
-             <Route path ="/editar" component={Editar}></Route>
-             <Route path ="/agregar" component={Agregar}></Route>
+              
+                <div class="card">
+                    <div class="card-header d-md-flex justify-content-md-end">                 
+                     <Link className="btn btn-outline-success " to="/agregar" data-bs-toggle="tooltip" data-bs-placement="top" title="Agregar un Tecnico" ><i class="bi bi-person-add"></i> </Link>                    
+                    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Lista de Tecnicos</h4>
+                        <Listar></Listar>
+                    </div>                    
+                </div>          
+                <Route path ="/editar" component={Editar}></Route>
+                <Route path ="/agregar" component={Agregar}></Route>
+            
              </Router>
              </> );
     }

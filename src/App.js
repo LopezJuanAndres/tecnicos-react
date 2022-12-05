@@ -14,16 +14,12 @@ function App() {
                 <Link  className="nav-item nav-link" to="/Sucursales">Sucursales</Link>
             </div>
         </nav>
-        <div className="container container-fluid text-center table-responsive">            
-       <Route exact path ="/" component={Trabajos}></Route>
-       <Route path ="/Tecnicos" component={Tecnicos}></Route>
-       <Route path ="/Sucursales" component={Sucursales}></Route>
-       <Route path ="/Trabajos" component={Trabajos}></Route>
-
-        </div>
-
-        
-       
+        <div className="container  text-center ">            
+            <Route exact path ="/" component={Trabajos}></Route>
+            <Route path ="/Tecnicos" component={Tecnicos}></Route>
+            <Route path ="/Sucursales" component={Sucursales}></Route>
+            <Route path ="/Trabajos" component={Trabajos}></Route>
+        </div>       
         </Router>
       );
 }

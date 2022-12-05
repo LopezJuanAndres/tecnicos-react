@@ -16,20 +16,41 @@ class Trabajos extends React.Component {
               <div className="card table-responsive">
               <div className="card-header "> 
                 <div className="row">
-              <div class="input-group  mb-3 ">
+              <div className="input-group  mb-3 ">
                <input type="text" class="form-control col-3" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-               <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar trabajo</button>
+               <button className="btn btn-outline-secondary" type="button" id="button-addon2">Buscar trabajo</button>
                <div className='col-3 d-md-flex justify-content-md-end' >
-              <Link className="btn btn btn-outline-success mr-5" to="/agregar" data-bs-toggle="tooltip" data-bs-placement="top" title="Agregar un trabajo a la Lista" ><i class="bi bi-clipboard2-plus-fill"></i> Agregar</Link>
-              <Link className="btn btn-outline-danger" to={"/borrar"} data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar trabajo de la Lista" ><i class="bi bi-clipboard2-x-fill"></i>Eliminar</Link>        
+              <Link className="btn btn btn-outline-success mr-5" to="/agregar" data-bs-toggle="tooltip" data-bs-placement="top" title="Agregar Trabajo de la Lista" ><i class="bi bi-clipboard2-plus-fill"></i>Agregar</Link>
+              <Link className="btn btn-outline-danger" to={"/borrar"} data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Trabajo de la Lista" ><i class="bi bi-clipboard2-x-fill"></i>Eliminar</Link>        
               </div> 
-             </div>
-                   
+             </div>                   
             </div>
             </div> 
             <div className="card-body table-responsive-xs ">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
+            <div className="modal fade" id="addjobs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Asignacion de Trabajo</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+      <select className="form-select col-2 form-select-sm" aria-label="Default select example">
+             <option selected>Selecciona el Tecnico</option>
+             <option value="1">jalopez</option>
+             <option value="2">mbauza</option>
+             <option value="3">arindeic</option>
+        </select>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" className="btn btn-primary"> Comenzar </button>
+      </div>
+    </div>
+  </div>
+</div>
+            <div className="accordion" id="accordionPanelsStayOpenExample">
+                <div className="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button text-info" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         Trabajos Pendientes
@@ -150,7 +171,7 @@ class Trabajos extends React.Component {
                     </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div className="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                     <button class="accordion-button collapsed text-success " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                     Trabajos En Proceso
@@ -210,7 +231,7 @@ class Trabajos extends React.Component {
                     </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div className="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                     <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                     Trabajos Finalizados
