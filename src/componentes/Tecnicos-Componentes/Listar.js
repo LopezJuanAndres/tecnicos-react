@@ -22,11 +22,9 @@ class Listar extends React.Component {
                         <td>4</td>
                         <td>
                            <div className="btn-group" role="group" aria-label="">
-                            <Link className="btn btn-primary" to={"/editar"}>Editar</Link>
-                            <button  type="button" class="btn btn-danger" >Borrar</button>
-                           
-                           </div>
-                            
+                            <Link className="btn btn-primary" to={"/editar"} data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Informacion"> <i class="bi bi-person-lines-fill"></i></Link>
+                            <button  type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Tecnico" ><i class="bi bi-person-fill-x"></i></button>
+                          </div>
                         </td>
                     </tr>
                 </tbody>

@@ -208,51 +208,7 @@ class Trabajos extends React.Component {
                     </div>
                     </div>
                 </div>
-                <div className="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Trabajos Finalizados
-                    </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                    <table className="table table-striped table-danger ">
-                    <thead className="thead-inverse">
-                        <tr>
-                            <th>Responsable</th>
-                            <th>Empresa</th>
-                            <th>Sucursal</th>                  
-                            <th>Descripcion</th>
-                            <th>Fecha de ini./Fin</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Arindeico</td>
-                                <td>Musimundo</td>
-                                <td>4-Santo Tome</td>
-                                <td> Reemplazo Impr.Laser l02 ........  </td>              
-                                <td> 14/11/22-01/12/22</td>
-                            </tr>
-                            <tr>
-                                <td>mbauza</td>
-                                <td>Musimundo</td>
-                                <td>4-Santo Tome</td>
-                                <td> Cambio de pc</td>
-                                <td> 14/11/22-01/12/22</td>
-                            </tr>
-                            <tr>
-                                <td>fjordan</td>
-                                <td>CA</td>
-                                <td>20-Santo Tome</td>
-                                <td> Reemplazo Impr.Laser l02 ........</td>
-                                <td> 14/11/22-01/12/22</td>
-                            </tr>
-                        </tbody>
-                </table>
-                    </div>
-                    </div>
-                </div>
+               
             </div>
                     
                      <Route path ="/agregar" component={Agregar}></Route>
