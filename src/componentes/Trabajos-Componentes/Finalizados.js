@@ -1,7 +1,4 @@
 import React from 'react';
-import {Link,Route,BrowserRouter as Router} from "react-router-dom";
-import Agregar  from "../componentes/Trabajos-Componentes/Agregar";
-import Editar from "../componentes/Trabajos-Componentes/Editar";
 
 class Finalizados extends React.Component {
     constructor(props) {
@@ -9,14 +6,13 @@ class Finalizados extends React.Component {
       this.state = {  }
     }    
     render() { 
-        return (   
-        <Router> 
+        return (          
               <div className="card table-responsive">
                <div className="card-header "> 
-                <div className="row">                       
-                  <div className='col-3 d-md-flex justify-content-md-end' >
-                    <Link className="btn btn btn-outline-success mr-5" to="/agregar" data-bs-toggle="tooltip" data-bs-placement="top" title="Agregar Trabajo de la Lista" ><i class="bi bi-clipboard2-plus-fill"></i>Agregar</Link>
-                    <Link className="btn btn-outline-danger" to={"/borrar"} data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Trabajo de la Lista" ><i class="bi bi-clipboard2-x-fill"></i>Eliminar</Link>        
+                <div className="row justify-content-md-end">                       
+                  <div className='col-3 d-md-flex ' >
+                    <button className="btn btn btn-outline-success mr-5" to="/agregar" data-bs-toggle="tooltip" data-bs-placement="top" title="Agregar Trabajo de la Lista" ><i class="bi bi-clipboard2-plus-fill"></i>Agregar</button>
+                    <button className="btn btn-outline-danger" to={"/borrar"} data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Trabajo de la Lista" ><i class="bi bi-clipboard2-x-fill"></i>Eliminar</button>        
                   </div>         
                 </div>
               </div> 
@@ -55,11 +51,10 @@ class Finalizados extends React.Component {
                             </tr>
                         </tbody>
                 </table>                   
-                     <Route path ="/agregar" component={Agregar}></Route>
-                     <Route path ="/editar" component={Editar}></Route>
+                     
             </div>
         </div>         
-        </Router>
+     
         );
     }
 }
